@@ -1,0 +1,78 @@
+[
+  {
+    "question": "Linear Regression is a foundational concept in machine learning, often used for Predicting what?",
+    "answer": "quantitative response"
+  },
+  {
+    "question": "What is a quantitative response in machine learning?",
+    "answer": "quantitative response is a numerical output that a model predicts such as price or temperature"
+  },
+  {
+    "question": "What relationship is linear regression based on?",
+    "answer": "Linear regression is based on the relationship between a dependent variable and one or more independent variables"
+  },
+  {
+    "question": "What is a dependent variable?",
+    "answer": "a dependent variable is what we want to predict. For example, in a housing price prediction model, the house price would be the dependent variable"
+  },
+  {
+    "question": "What is an independent variable?",
+    "answer": "an independent variable is what we are using to predict. For example, size, location, age would be examples of independent variables."
+  },
+  {
+    "question": "What is the linear equation formula?",
+    "answer": "y equals mx plus c"
+  },
+  {
+    "question": "What does the Y in the formula represent?",
+    "answer": "The Dependent variable or what we want to predict"
+  },
+  {
+    "question": "What does the X in the formula represent?",
+    "answer": "The independent variable or what we use predict"
+  },
+  {
+    "question": "What does the M in the formula represent?",
+    "answer": "The slope of the line"
+  },
+  {
+    "question": "What does the C in the formula represent?",
+    "answer": "The Y intercept"
+  },
+  {
+    "question": "What is the goal of linear regression?",
+    "answer": "The goal of linear regression is to model the linear relationship between a dependent variable and one or more independent variables"
+  },
+  {
+    "question": "In linear regression what is the e?",
+    "answer": "The goal of linear regression is to model the linear relationship between a dependent variable and one or more independent variables"
+  },
+  {
+    "question": "How do we find the Line of Best fit",
+    "answer": "This is usually done using a method called least squares,"
+  },
+  {
+    "question": "The least squares method is a statistical technique used in linear regression to find the line that best fits the data/ Explain how it works",
+    "answer": "It works by minimizing the sum of the squares of the differences between the observed values and the values predicted by the line"
+  },
+  {
+    "question": "How do we make Predictions with Linear Regression?",
+    "answer": "Once you have the best-fit line, We can use it to make predictions."
+  },
+  {
+    "question": "using the house example if B0 = 50,000 and B1 = 300 price per square foot what would the prediction for the price of a 2000 square foot house be?",
+    "answer": "Price=50,000 + 300 × 2000 = 650,000"
+  },
+  {
+    "question": "Give some examples of real world senarios were Linear regression is widly used",
+    "answer": "Linear regression is widely used in economics, business, biology, engineering, and many other fields. It's a starting point for understanding relationships between variables and making predictions based on these relationships."
+  },
+  {
+    "question": "When does linear regression works best?",
+    "answer": "Linear regression works best when the data has a linear relationship. If the relationship isn't linear, other types of regression or models might be more suitable."
+  },
+  {
+    "question": "When is linear regression an unsuitable model?",
+    "answer": "If the relationship in the data isn't linear, other types of regression or models might be more suitable."
+  },
+]
