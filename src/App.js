@@ -2,9 +2,10 @@
  * @Author: Bernard Hanna
  * @Date:   2023-12-12 13:24:24
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2023-12-12 19:59:02
+ * @Last Modified time: 2023-12-12 20:03:43
  */
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+
 import './App.css';
 import questions from './questions.json';
 
@@ -20,7 +21,7 @@ function App() {
 
   currentQuestionIndexRef.current = currentQuestionIndex;
 
-  const initializeSpeechRecognition = () => {
+  const initializeSpeechRecognition = useCallback(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
       alert('Speech recognition not supported in this browser. Please use Chrome or Edge.');
@@ -41,11 +42,11 @@ function App() {
         }
       };
     }
-  };
+  }, []);
 
   useEffect(() => {
     initializeSpeechRecognition();
-
+    
     return () => {
       if (recognitionRef.current) {
         recognitionRef.current.stop();
