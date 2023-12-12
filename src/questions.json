@@ -74,5 +74,5 @@
   {
     "question": "When is linear regression an unsuitable model?",
     "answer": "If the relationship in the data isn't linear, other types of regression or models might be more suitable."
-  },
+  }
 ]
