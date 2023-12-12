@@ -2,7 +2,7 @@
  * @Author: Bernard Hanna
  * @Date:   2023-12-12 13:24:24
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2023-12-12 19:25:52
+ * @Last Modified time: 2023-12-12 19:59:02
  */
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
@@ -51,7 +51,7 @@ function App() {
         recognitionRef.current.stop();
       }
     };
-  }, []);
+  }, [initializeSpeechRecognition]);
 
   useEffect(() => {
     if (isListening && recognitionRef.current) {
