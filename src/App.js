@@ -2,7 +2,7 @@
  * @Author: Bernard Hanna
  * @Date:   2023-12-12 13:24:24
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2023-12-12 20:03:43
+ * @Last Modified time: 2023-12-12 20:07:43
  */
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
@@ -70,8 +70,8 @@ function App() {
   };
 
   const randomizeQuestions = () => {
-    let shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
-    // Update state with shuffled questions here if needed.
+  // eslint-disable-next-line no-unused-vars
+  const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
   };
 
   const moveToNextQuestion = () => {
