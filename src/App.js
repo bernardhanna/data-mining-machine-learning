@@ -2,10 +2,10 @@
  * @Author: Bernard Hanna
  * @Date:   2023-12-12 13:24:24
  * @Last Modified by:   Bernard Hanna
- * @Last Modified time: 2023-12-12 20:07:43
+ * @Last Modified time: 2023-12-13 18:49:57
  */
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-
+import Fuse from 'fuse.js';
 import './App.css';
 import questions from './questions.json';
 
@@ -15,11 +15,19 @@ function App() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [speechAnswer, setSpeechAnswer] = useState('');
-
+  const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
   const currentQuestionIndexRef = useRef(currentQuestionIndex);
   const recognitionRef = useRef(null);
 
   currentQuestionIndexRef.current = currentQuestionIndex;
+
+  const fuzzyMatch = (input, answer) => {
+    const options = { includeScore: true, threshold: 0.6 }; // Adjust threshold as needed
+    const fuse = new Fuse([answer], options);
+    const result = fuse.search(input);
+  
+    return result.length > 0 && result[0].score <= options.threshold;
+  };
 
   const initializeSpeechRecognition = useCallback(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -36,9 +44,19 @@ function App() {
         const last = event.results.length - 1;
         const result = event.results[last][0].transcript.trim().toLowerCase();
         setSpeechAnswer(result);
-
-        if (result === questions[currentQuestionIndexRef.current].answer.toLowerCase()) {
-          moveToNextQuestion();
+      
+        const isCorrectAnswer = fuzzyMatch(result, questions[currentQuestionIndexRef.current].answer.toLowerCase());
+      
+        if (isCorrectAnswer) {
+          setCorrectAnswerCount(prevCount => {
+            const newCount = prevCount + 1;
+            if (newCount === 5) {
+              // Reset count and move to the next question
+              setCorrectAnswerCount(0);
+              moveToNextQuestion();
+            }
+            return newCount;
+          });
         }
       };
     }
@@ -76,15 +94,27 @@ function App() {
 
   const moveToNextQuestion = () => {
     setCurrentQuestionIndex(prevIndex => {
+      setCorrectAnswerCount(0); // Reset correct answer count
+      setSpeechAnswer('');
+      setShowAnswer(false);
+  
       if (prevIndex < questions.length - 1) {
-        setSpeechAnswer('');
-        setShowAnswer(false);
         return prevIndex + 1;
       } else {
-        // Reset to the first question
+        return 0; // Reset the index to 0 to start from the first question
+      }
+    });
+  };
+
+  const moveToPreviousQuestion = () => {
+    setCurrentQuestionIndex(prevIndex => {
+      if (prevIndex > 0) {
+        setCorrectAnswerCount(0); // Reset correct answer count
         setSpeechAnswer('');
         setShowAnswer(false);
-        return 0; // Reset the index to 0 to start from the first question
+        return prevIndex - 1;
+      } else {
+        return prevIndex;
       }
     });
   };
@@ -112,7 +142,7 @@ function App() {
             <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => moveToNextQuestion()} disabled={currentQuestionIndex >= questions.length - 1}>
               Next
             </button>
-            <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded" onClick={() => setCurrentQuestionIndex(currentQuestionIndex - 1)} disabled={currentQuestionIndex === 0}>
+            <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded" onClick={moveToPreviousQuestion} disabled={currentQuestionIndex === 0}>
               Back
             </button>
           </div>
@@ -126,6 +156,7 @@ function App() {
       </button>
       <div class="text-white py-12">
         {speechAnswer && <span>Your Answer: {speechAnswer}</span>}
+        <div class="py-12">Correct Answers: {correctAnswerCount}/5</div>
       </div>
     </div>
   );

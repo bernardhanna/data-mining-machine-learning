@@ -1,86 +1,270 @@
 [
   {
-    "question": "Linear Regression is a foundational concept in machine learning, often used for Predicting what?",
-    "answer": "quantitative response"
+    "question": "Describe the Deterministic Model:",
+    "answer": "an equation or set of equations that allow us to fully determine the value of the dependent variable from the values of the independent variables"
+  },
+  {
+    "question": "Describe the Probabilistic Model:",
+    "answer": "a method used to make predictions but the predictions will be approximate due to the randomness that is part of a real-life process."
+  },
+  {
+    "question": "What is supervised Learning:",
+    "answer": "In supervised learning the algorithm learns from a labeled dataset which means each training sample includes an input vector and a corresponding output label"
+  },
+  {
+    "question": "What is the goal of supervised Learning:",
+    "answer": "The goal is to learn a mapping from inputs to outputs"
+  },
+  {
+    "question": "What are some examples of supervised Learning:",
+    "answer": "Regression and classification tasks like predicting house prices or identifying spam emails are some examples of supervised Learning"
+  },
+  {
+    "question": "When would we use supervised Learning:",
+    "answer": "Supervised Learning is used when the relationship between input data and the output label is essential, and labeled data is available"
+  },
+  {
+    "question": "What is Unsupervised Learning:",
+    "answer": "supervised learning involves learning patterns from unlabeled data"
+  },
+  {
+    "question": "What is the goal of Unsupervised Learning:",
+    "answer": "The algorithm tries to infer the underlying structure from the data without any explicit output variable or label"
+  },
+  {
+    "question": "What are some examples of Unsupervised Learning:",
+    "answer": "Clustering, dimensionality reduction, and association rule learning like customer segmentation, feature reduction, or market basket analysis"
+  },
+  {
+    "question": "When would we use unsupervised Learning:",
+    "answer": "When the goal is to understand and explore data, uncover hidden patterns, or identify cluster. It is best for data exploration and pattern discovery."
+  },
+  {
+    "question": "When is Supervised learning Ideal?:",
+    "answer": "It is ideal for prediction and classification tasks"
+  },
+  {
+    "question": "What does the choice between Supervised and Unsupervised learning depend on:",
+    "answer": "The choice between supervised and unsupervised learning depends on the nature of the problem the type of data available, and the specific objectives of the task at hand"
+  },
+  {
+    "question": "Describe the Probabilistic Model:",
+    "answer": "a method used to make predictions but the predictions will be approximate due to the randomness that is part of a real-life process."
+  },
+  {
+    "question": "What does CRISP-DM stand for:",
+    "answer": "Cross Industry Standard Process for Data Mining."
+  },
+  {
+    "question": "Outline the 6 steps in the CRISP-DM model",
+    "answer": "Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, Deployment "
+  },
+  {
+    "question": "Detail the Business Understanding step:",
+    "answer": "What is the problem to be solved and in particular what is the usage scenario? How can the business problem be formulated as one or more data mining problems?"
+  },
+  {
+    "question": "Detail the Data Understanding step:",
+    "answer": "Collect initial data and proceed with activities to get familiar with the data. Identify data quality issues, discover first insights into the data, or detect interesting subsets for further examination"
+  },
+  {
+    "question": "Detail the Data Preparation step:",
+    "answer": "Construct the final dataset from the initial raw data This involves tasks like cleaning data, selecting and formatting data, and constructing new attributes using feature engineering"
+  },
+  {
+    "question": "Detail the Modelling step:",
+    "answer": "Determining the model and any parameter using models like Decision Tree or Line of Best Fit "
+  },
+  {
+    "question": "Detail the Evaluation step:",
+    "answer": "Evaluate the model before deployment. Often another iteration is required, going back to the Business Analysis Phase"
+  },
+  {
+    "question": "Detail the Deployment step:",
+    "answer": "Plan and execute the deployment of the model. Produce final reports, conduct a final project review, and (if necessary) prepare for ongoing support and maintenance."
+  },
+  {
+    "question": "What does the CRISP-DM model emphasize?",
+    "answer": "the cyclical nature of data mining projects, where the outcomes of each stage can impact previous steps, requiring iteration and refinement"
+  },
+  {
+    "question": "When are some of the negatives of the CRISP-DM model",
+    "answer": "CRISP is based on exploration.Outcomes are far less predictable. Results may fundamentally change the understanding of the problem. More throw away prototypes are required. Engineering and deploying a solution too early can be a very costly mistake"
+  },
+  {
+    "question": "When is it best to use the CRISP-DM model",
+    "answer": "The CRISP-DM model is flexible and can be adapted to fit a wide range of data mining and analytical projects"
   },
   {
     "question": "What is a quantitative response in machine learning?",
     "answer": "quantitative response in machine learning is a numerical output that a model predicts such as the price of something"
   },
-  {
-    "question": "What relationship is linear regression based on?",
-    "answer": "linear regression is based on the relationship between the dependent variable and one or more independent variables"
-  },
-  {
-    "question": "What is a dependent variable?",
-    "answer": "a dependent variable is what we want to predict. "
-  },
-  {
-    "question": "Give an example of the dependent variable in a housing price prediction model",
-    "answer": "The house price would be the dependent variable "
-  },
-  {
-    "question": "What is an independent variable?",
-    "answer": "an independent variable is what we are using to predict."
-  },
-  {
-    "question": "What are some examples of independant variables?",
-    "answer": "size, location, age would be examples of independent variables."
-  },
-  {
-    "question": "What is the linear equation formula?",
-    "answer": "y equals mx plus c"
-  },
-  {
-    "question": "What does the Y in the formula represent?",
-    "answer": "The Dependent variable or what we want to predict"
-  },
-  {
-    "question": "What does the X in the formula represent?",
-    "answer": "The independent variable or what we use predict"
-  },
-  {
-    "question": "What does the M in the formula represent?",
-    "answer": "The slope of the line"
-  },
-  {
-    "question": "What does the C in the formula represent?",
-    "answer": "The Y intercept"
-  },
-  {
-    "question": "What is the goal of linear regression?",
-    "answer": "The goal of linear regression is to model the linear relationship between a dependent variable and one or more independent variables"
-  },
-  {
-    "question": "In linear regression what is the e?",
-    "answer": "The goal of linear regression is to model the linear relationship between a dependent variable and one or more independent variables"
-  },
-  {
-    "question": "How do we find the Line of Best fit",
-    "answer": "This is usually done using a method called least squares,"
-  },
-  {
-    "question": "The least squares method is a statistical technique used in linear regression to find the line that best fits the data/ Explain how it works",
-    "answer": "It works by minimizing the sum of the squares of the differences between the observed values and the values predicted by the line"
-  },
-  {
-    "question": "How do we make Predictions with Linear Regression?",
-    "answer": "Once you have the best-fit line, We can use it to make predictions."
-  },
-  {
-    "question": "using the house example if B0 = 50,000 and B1 = 300 price per square foot what would the prediction for the price of a 2000 square foot house be?",
-    "answer": "Price=50,000 + 300 × 2000 = 650,000"
-  },
-  {
-    "question": "Give some examples of real world senarios were Linear regression is widly used",
-    "answer": "Linear regression is widely used in economics, business, biology, engineering, and many other fields. It's a starting point for understanding relationships between variables and making predictions based on these relationships."
-  },
-  {
-    "question": "When does linear regression works best?",
-    "answer": "Linear regression works best when the data has a linear relationship. If the relationship isn't linear, other types of regression or models might be more suitable."
-  },
-  {
-    "question": "When is linear regression an unsuitable model?",
-    "answer": "If the relationship in the data isn't linear, other types of regression or models might be more suitable."
-  }
+    {
+      "question": "Linear Regression is a foundational concept in machine learning, often used for Predicting what?",
+      "answer": "quantitative response"
+    },
+    {
+      "question": "What is a quantitative response in machine learning?",
+      "answer": "quantitative response in machine learning is a numerical output that a model predicts such as the price of something"
+    },
+    {
+      "question": "What relationship is linear regression based on?",
+      "answer": "linear regression is based on the relationship between the dependent variable and one or more independent variables"
+    },
+    {
+      "question": "What is a dependent variable?",
+      "answer": "a dependent variable is what we want to predict"
+    },
+    {
+      "question": "Give an example of the dependent variable in a housing price prediction model",
+      "answer": "The house price would be the dependent variable"
+    },
+    {
+      "question": "What is an independent variable?",
+      "answer": "independent variable is what we are using to predict"
+    },
+    {
+      "question": "What are some examples of independant variables?",
+      "answer": "location size and age would be examples of independent variables"
+    },
+    {
+      "question": "What is the linear equation formula?",
+      "answer": "y equals mx plus c"
+    },
+    {
+      "question": "What does the Y in the formula represent?",
+      "answer": "The Dependent variable or what we want to predict"
+    },
+    {
+      "question": "What does the X in the formula represent?",
+      "answer": "the independent variable or what we used to predict"
+    },
+    {
+      "question": "What does the M in the formula represent?",
+      "answer": "The slope of the line"
+    },
+    {
+      "question": "What does the C in the formula represent?",
+      "answer": "The Y intercept"
+    },
+    {
+      "question": "How do we find the Find the Parameters a and b",
+      "answer": "Normally we have a set of existing data, for example corresponding values of x and y. From there we want to estimate a and b. This corresponds to finding the line of best fit through the points"
+    },
+    {
+      "question": "What is the goal of linear regression?",
+      "answer": "The goal of linear regression is to model the linear relationship between a dependent variable and one or more independent variables"
+    },
+    {
+      "question": "What are the basic steps in the process we would use to get the linear regression prediction",
+      "answer": "data collection model training and prediction"
+    },
+    {
+      "question": "What is an example of the Data Colection step when trying to predict the price of a house based on its size",
+      "answer": "gather data on various houses including their sizes and selling prices"
+    },
+    {
+      "question": "Give an example of the model training step in the process",
+      "answer": "Using the data we train our linear regression model by finding the most suitable values for mx + c that best fit the data"
+    },
+    {
+      "question": "Outline the prediction step",
+      "answer": "Once the model is trained we can use it to predict the price of a house of any given size"
+    },
+    {
+      "question": "How would we evaluate how well the model fits the data?",
+      "answer": "often using metrics like Mean Squared Error"
+    },
+    {
+      "question": "What do we need to do to find the Line of Best fit",
+      "answer": "Minimize the sum of the squares of the errors"
+    },
+    {
+      "question": "How do we find the Line of Best fit",
+      "answer": "this is usually done using a method called least squares"
+    },
+    {
+      "question": "The least squares method is a statistical technique used in linear regression to find the line that best fits the data. Explain how it works",
+      "answer": "it works by minimizing the sum of the squares of the differences between the observed values and the values predicted by the line"
+    },
+    {
+      "question": "What does the least squares method produce?",
+      "answer": "a straight line that minimizes the sum of the squares of the errors."
+    },
+    {
+      "question": "How do we make Predictions with Linear Regression?",
+      "answer": "Once we have the line of best fit we can use it to make predictions"
+    },
+    {
+      "question": "using the house example if B0 = 50,000 and B1 = 300 price per square foot what would the prediction for the price of a 2000 square foot house be?",
+      "answer": "price equals 50,000 plus 300 multiplied by two thousand equals 650,000"
+    },
+    {
+      "question": "Give some examples of real world senarios were Linear regression is widly used",
+      "answer": "Linear regression is widely used in economics business biology engineering and many other fields"
+    },
+    {
+      "question": "What is another name/ meaning of 'Residuals'?",
+      "answer": "Errors"
+    },
+    {
+      "question": "Give an example of a residual",
+      "answer": "differences between predicted value of y and actual value of y"
+    },
+    {
+      "question": "What is wrong with trying to minimize sum of the errors when finding the line of best fit?",
+      "answer": "positive and negative errors will cancel"
+    },
+    {
+      "question": "What is wrong with trying to minimize sum of the errors when finding the line of best fit?",
+      "answer": "positive and negative errors will cancel"
+    },
+    {
+      "question": "What is linear regression a starting point for?",
+      "answer": "It is a starting point for understanding relationships between variables and making predictions based on these relationships"
+    },
+    {
+      "question": "When does linear regression works best?",
+      "answer": "Linear regression works best when the data has a linear relationship"
+    },
+    {
+      "question": "When is linear regression an unsuitable model?",
+      "answer": "If the relationship in the data isn't linear other types of regression models might be more suitable"
+    },
+    {
+      "question": "What is a 'cost function' or 'objective function' in linear regression",
+      "answer": "an opimization problem"
+    },
+    {
+      "question": "How is an opimization problem is normally solved",
+      "answer": "An opimization problem is normally solved by determining values that minimize or maximizes an objective function"
+    },
+    {
+      "question": "What is the objective/cost function in simple linear regression?",
+      "answer": "the sum of the squares of the errors"
+    },
+    {
+      "question": "What is the abbrievated version ofthe sum of the squares of the errors?",
+      "answer": "S S E"
+    },
+    {
+      "question": "Why is Simple Linear Regression called 'Simple'?",
+      "answer": "because there is only one independent variable"
+    },
+    {
+      "question": "What is a Coefficient in machine learning?",
+      "answer": "a coefficient is a numerical value associated with a variable in a model, representing the strength and direction of the relationship between that feature and the target variable"
+    },
+    {
+      "question": "What is a common mehod used when Estimatings the Coefficients",
+      "answer": "The least squares method produces a straight line that minimizes the sum of the squares of the errors"
+    },
+    {
+      "question": "What are two common Conditions Necessary for Linear Regression Analysis?",
+      "answer": "The probability distribution of errors is normal. The mean of the errors is 0. The standard deviation of the errors is a constant regardless of the value of x. The value of the error associated with any particular value of y is independent of the error associated with any other value of y"
+    },
+    {
+      "question": "What are two common Conditions Necessary for Linear Regression Analysis?",
+      "answer": "The probability distribution of errors is normal. The mean of the errors is 0. The standard deviation of the errors is a constant regardless of the value of x. The value of the error associated with any particular value of y is independent of the error associated with any other value of y"
+    }
 ]
