@@ -5,19 +5,27 @@
   },
   {
     "question": "What is a quantitative response in machine learning?",
-    "answer": "quantitative response is a numerical output that a model predicts such as price or temperature"
+    "answer": "quantitative response in machine learning is a numerical output that a model predicts such as the price of something"
   },
   {
     "question": "What relationship is linear regression based on?",
-    "answer": "Linear regression is based on the relationship between a dependent variable and one or more independent variables"
+    "answer": "linear regression is based on the relationship between the dependent variable and one or more independent variables"
   },
   {
     "question": "What is a dependent variable?",
-    "answer": "a dependent variable is what we want to predict. For example, in a housing price prediction model, the house price would be the dependent variable"
+    "answer": "a dependent variable is what we want to predict. "
+  },
+  {
+    "question": "Give an example of the dependent variable in a housing price prediction model",
+    "answer": "The house price would be the dependent variable "
   },
   {
     "question": "What is an independent variable?",
-    "answer": "an independent variable is what we are using to predict. For example, size, location, age would be examples of independent variables."
+    "answer": "an independent variable is what we are using to predict."
+  },
+  {
+    "question": "What are some examples of independant variables?",
+    "answer": "size, location, age would be examples of independent variables."
   },
   {
     "question": "What is the linear equation formula?",
