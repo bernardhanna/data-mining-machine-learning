@@ -1,5 +1,13 @@
 [
   {
+    "question": "What metrix are used to construct decision trees?",
+    "answer": "ID3, C4.5, CART or Gini impurity"
+  },
+  {
+    "question": "How do we classify a new data instance",
+    "answer": "we start at the root and make decisions at each node based on the instance's features until we reach a leaf node, which gives us the classification"
+  },
+  {
     "question": "Describe the Deterministic Model:",
     "answer": "an equation or set of equations that allow us to fully determine the value of the dependent variable from the values of the independent variables"
   },
