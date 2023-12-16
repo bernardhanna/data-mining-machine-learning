@@ -5,15 +5,15 @@
   },
   {
     "question": "Describe the Probabilistic Model:",
-    "answer": "a method used to make predictions but the predictions will be approximate due to the randomness that is part of a real-life process."
+    "answer": "a method used to make predictions but the predictions will be approximate due to the randomness of a real world process."
   },
   {
     "question": "What is supervised Learning:",
-    "answer": "In supervised learning the algorithm learns from a labeled dataset which means each training sample includes an input vector and a corresponding output label"
+    "answer": "Supervised learning is a type of machine learning where the algorithm is trained on a dataset that includes the input data and the correct outputs. This training helps the algorithm make predictions on new, unseen data"
   },
   {
     "question": "What is the goal of supervised Learning:",
-    "answer": "The goal is to learn a mapping from inputs to outputs"
+    "answer": "The goal of supervised Learning is to learn a mapping from inputs to outputs"
   },
   {
     "question": "What are some examples of supervised Learning:",
@@ -21,35 +21,35 @@
   },
   {
     "question": "When would we use supervised Learning:",
-    "answer": "Supervised Learning is used when the relationship between input data and the output label is essential, and labeled data is available"
-  },
-  {
-    "question": "What is Unsupervised Learning:",
-    "answer": "supervised learning involves learning patterns from unlabeled data"
-  },
-  {
-    "question": "What is the goal of Unsupervised Learning:",
-    "answer": "The algorithm tries to infer the underlying structure from the data without any explicit output variable or label"
-  },
-  {
-    "question": "What are some examples of Unsupervised Learning:",
-    "answer": "Clustering, dimensionality reduction, and association rule learning like customer segmentation, feature reduction, or market basket analysis"
-  },
-  {
-    "question": "When would we use unsupervised Learning:",
-    "answer": "When the goal is to understand and explore data, uncover hidden patterns, or identify cluster. It is best for data exploration and pattern discovery."
+    "answer": "Supervised Learning is used when the relationship between input data and the output label is crucial, and labeled data is available"
   },
   {
     "question": "When is Supervised learning Ideal?:",
-    "answer": "It is ideal for prediction and classification tasks"
+    "answer": "Supervised learning is ideal for prediction and classification tasks"
   },
   {
-    "question": "What does the choice between Supervised and Unsupervised learning depend on:",
-    "answer": "The choice between supervised and unsupervised learning depends on the nature of the problem the type of data available, and the specific objectives of the task at hand"
+    "question": "What is Unsupervised Learning:",
+    "answer": "unsupervised learning involves learning patterns from unlabeled data"
   },
   {
-    "question": "Describe the Probabilistic Model:",
-    "answer": "a method used to make predictions but the predictions will be approximate due to the randomness that is part of a real-life process."
+    "question": "What is the goal of Unsupervised Learning:",
+    "answer": "The goal of unsupervised learning is for the algorithm to discover patterns and structures in data on its own without being given any specific outputs or labels to guide it"
+  },
+  {
+    "question": "What are some examples of Unsupervised Learning:",
+    "answer": "Clustering, dimensionality reduction, and association rule learning"
+  },
+  {
+    "question": "What are some examples of association rule learning:",
+    "answer": "Feature reduction, customer segmentation  and market basket analysis are examples of association rule learning"
+  },
+  {
+    "question": "When would we use unsupervised Learning:",
+    "answer": "Unsupervised learning is best for data exploration and pattern discovery. When the goal is to understand and explore data, uncover hidden patterns, or identify clusters."
+  },
+  {
+    "question": "What is the basic difference between Supervised and Unsupervised learning ?",
+    "answer": "The primary goal of supervised learning is typically to make predictions. Where as unsupervised learning aims to explore the underlying structure of the data."
   },
   {
     "question": "What does CRISP-DM stand for:",
@@ -60,28 +60,36 @@
     "answer": "Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, Deployment "
   },
   {
+    "question": "Name the first 3 steps in CRISP-DM model again",
+    "answer": "Business Understanding, Data Understanding, Data Preparation "
+  },
+  {
+    "question": "Name thelast 3 steps in CRISP-DM model again",
+    "answer": "Modeling, Evaluation, Deployment"
+  },
+  {
     "question": "Detail the Business Understanding step:",
-    "answer": "What is the problem to be solved and in particular what is the usage scenario? How can the business problem be formulated as one or more data mining problems?"
+    "answer": "Business Understanding involves defining the problem, determining its relevance to business goals, and translating it into a data mining context"
   },
   {
     "question": "Detail the Data Understanding step:",
-    "answer": "Collect initial data and proceed with activities to get familiar with the data. Identify data quality issues, discover first insights into the data, or detect interesting subsets for further examination"
+    "answer": "Collect data. get familiar with the data. Identify data quality issues. detect interesting subsets for further examination"
   },
   {
     "question": "Detail the Data Preparation step:",
-    "answer": "Construct the final dataset from the initial raw data This involves tasks like cleaning data, selecting and formatting data, and constructing new attributes using feature engineering"
+    "answer": "Data Preparation entails transforming raw data into a suitable dataset for analysis, involving cleaning, selecting, and feature engineering"
   },
   {
     "question": "Detail the Modelling step:",
-    "answer": "Determining the model and any parameter using models like Decision Tree or Line of Best Fit "
+    "answer": "Modelling involves selecting and configuring machine learning algorithms, such as Decision Trees, to fit the prepared data"
   },
   {
     "question": "Detail the Evaluation step:",
-    "answer": "Evaluate the model before deployment. Often another iteration is required, going back to the Business Analysis Phase"
+    "answer": "Evaluate the model before deployment. Often another iteration is required, going back to the Business Understanding Phase"
   },
   {
     "question": "Detail the Deployment step:",
-    "answer": "Plan and execute the deployment of the model. Produce final reports, conduct a final project review, and (if necessary) prepare for ongoing support and maintenance."
+    "answer": "Plan and execute the deployment of the model. Produce final reports, conduct a final review, and prepare for ongoing support and maintenance."
   },
   {
     "question": "What does the CRISP-DM model emphasize?",
@@ -89,15 +97,11 @@
   },
   {
     "question": "When are some of the negatives of the CRISP-DM model",
-    "answer": "CRISP is based on exploration.Outcomes are far less predictable. Results may fundamentally change the understanding of the problem. More throw away prototypes are required. Engineering and deploying a solution too early can be a very costly mistake"
+    "answer": "Some negatives of the CRISP-DM model include its unpredictability due to its exploratory nature, the potential need for multiple prototypes  and the risk of costly mistakes if a solution is engineered and deployed prematurely."
   },
   {
     "question": "When is it best to use the CRISP-DM model",
-    "answer": "The CRISP-DM model is flexible and can be adapted to fit a wide range of data mining and analytical projects"
-  },
-  {
-    "question": "What is a quantitative response in machine learning?",
-    "answer": "quantitative response in machine learning is a numerical output that a model predicts such as the price of something"
+    "answer": "The CRISP-DM model is flexible and can be adapted to fit a wide range of data mining projects"
   },
     {
       "question": "Linear Regression is a foundational concept in machine learning, often used for Predicting what?",
@@ -149,7 +153,7 @@
     },
     {
       "question": "How do we find the Find the Parameters a and b",
-      "answer": "Normally we have a set of existing data, for example corresponding values of x and y. From there we want to estimate a and b. This corresponds to finding the line of best fit through the points"
+      "answer": "To find parameters a and b, we analyze existing x and y data to estimate these parameters, essentially determining the line of best fit through the data points"
     },
     {
       "question": "What is the goal of linear regression?",
@@ -185,7 +189,7 @@
     },
     {
       "question": "The least squares method is a statistical technique used in linear regression to find the line that best fits the data. Explain how it works",
-      "answer": "it works by minimizing the sum of the squares of the differences between the observed values and the values predicted by the line"
+      "answer": "The least squares method minimizes the sum of squared differences between observed values and those predicted by the regression line, effectively finding the best fit line for the data."
     },
     {
       "question": "What does the least squares method produce?",
@@ -216,10 +220,6 @@
       "answer": "positive and negative errors will cancel"
     },
     {
-      "question": "What is wrong with trying to minimize sum of the errors when finding the line of best fit?",
-      "answer": "positive and negative errors will cancel"
-    },
-    {
       "question": "What is linear regression a starting point for?",
       "answer": "It is a starting point for understanding relationships between variables and making predictions based on these relationships"
     },
@@ -229,7 +229,7 @@
     },
     {
       "question": "When is linear regression an unsuitable model?",
-      "answer": "If the relationship in the data isn't linear other types of regression models might be more suitable"
+      "answer": "If the relationship in the data isn't linear"
     },
     {
       "question": "What is a 'cost function' or 'objective function' in linear regression",
@@ -237,7 +237,7 @@
     },
     {
       "question": "How is an opimization problem is normally solved",
-      "answer": "An opimization problem is normally solved by determining values that minimize or maximizes an objective function"
+      "answer": "An opimization problem is normally solved by determining values that minimize or maximize an objective function"
     },
     {
       "question": "What is the objective/cost function in simple linear regression?",
@@ -260,11 +260,15 @@
       "answer": "The least squares method produces a straight line that minimizes the sum of the squares of the errors"
     },
     {
-      "question": "What are two common Conditions Necessary for Linear Regression Analysis?",
+      "question": "What are the  Conditions Necessary for Linear Regression Analysis?",
       "answer": "The probability distribution of errors is normal. The mean of the errors is 0. The standard deviation of the errors is a constant regardless of the value of x. The value of the error associated with any particular value of y is independent of the error associated with any other value of y"
     },
     {
-      "question": "What are two common Conditions Necessary for Linear Regression Analysis?",
-      "answer": "The probability distribution of errors is normal. The mean of the errors is 0. The standard deviation of the errors is a constant regardless of the value of x. The value of the error associated with any particular value of y is independent of the error associated with any other value of y"
+      "question": "How might Residual Analysis show Linear Regression may not be optimal for a regression problem",
+      "answer": "If the residuals show a pattern when plotted against the predicted values or a feature, it suggests that the relationship is not linear. Ideally, residuals should be randomly scattered around zero with no discernible pattern"
+    },
+    {
+      "question": "How might Poor Fit on Non-linear Data determine that Linear Regression may not be optimal for a regression problem",
+      "answer": "Linear Regression assumes a linear relationship between variables. If the actual relationship is non-linear, the model will have poor predictive accuracy. Plotting the observed data and the predicted line can visually demonstrate this poor fit"
     }
 ]
